@@ -3,6 +3,6 @@
 
 <display>
 	<category name="category.sample">
-		<portlet id="liferay-ide-stats" />
+		<portlet id="idestats"></portlet>
 	</category>
 </display>

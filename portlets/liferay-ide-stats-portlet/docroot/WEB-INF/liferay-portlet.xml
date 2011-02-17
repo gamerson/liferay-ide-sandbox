@@ -3,12 +3,14 @@
 
 <liferay-portlet-app>
 	<portlet>
-		<portlet-name>liferay-ide-stats</portlet-name>
+		<portlet-name>idestats</portlet-name>
 		<icon>/icon.png</icon>
-		<instanceable>true</instanceable>
-		<header-portlet-css>/css/main.css</header-portlet-css>
-		<footer-portlet-javascript>/js/main.js</footer-portlet-javascript>
-		<css-class-wrapper>liferay-ide-stats-portlet</css-class-wrapper>
+		<instanceable>false</instanceable>
+		<header-portlet-css>/css/portlet.css</header-portlet-css>
+		<footer-portlet-javascript>
+			/js/javascript.js
+		</footer-portlet-javascript>
+		<css-class-wrapper>idestats-portlet</css-class-wrapper>
 	</portlet>
 	<role-mapper>
 		<role-name>administrator</role-name>

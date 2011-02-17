@@ -7,21 +7,22 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
 >
 	<portlet>
-		<portlet-name>liferay-ide-stats</portlet-name>
+		<portlet-name>idestats</portlet-name>
 		<display-name>Liferay IDE Stats</display-name>
-		<portlet-class>com.liferay.util.bridges.mvc.MVCPortlet</portlet-class>
+		<portlet-class>com.liferay.IDEStatsPortlet</portlet-class>
 		<init-param>
 			<name>view-jsp</name>
-			<value>/view.jsp</value>
+			<value>/html/idestats/view.jsp</value>
 		</init-param>
 		<expiration-cache>0</expiration-cache>
 		<supports>
 			<mime-type>text/html</mime-type>
+			<portlet-mode>VIEW</portlet-mode>
 		</supports>
 		<portlet-info>
-			<title>Liferay IDE Stats</title>
-			<short-title>Liferay IDE Stats</short-title>
-			<keywords>Liferay IDE Stats</keywords>
+			<title>Liferay IDE Status</title>
+			<short-title>IDEStatsPortlet</short-title>
+			<keywords></keywords>
 		</portlet-info>
 		<security-role-ref>
 			<role-name>administrator</role-name>
