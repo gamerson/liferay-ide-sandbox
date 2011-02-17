@@ -1,5 +1,7 @@
 package com.liferay;
 
+import com.liferay.portal.kernel.log.Log;
+import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.messaging.Message;
 import com.liferay.portal.kernel.messaging.MessageListener;
 import com.liferay.portal.kernel.messaging.MessageListenerException;
@@ -11,6 +13,7 @@ import org.w3c.dom.Node;
 
 public class IDEStatsJobListener implements MessageListener {
 
+	
 	@Override
 	public void receive(Message arg0) throws MessageListenerException {
 		String[] statsUrls = IDEStatsUtil.getStatsUrls();
@@ -18,7 +21,9 @@ public class IDEStatsJobListener implements MessageListener {
 		for (String statsUrl : statsUrls) {
 			int downloadCount = parseDownloadCount(statsUrl);
 			
-			IDEStatsUtil.putCachedDownloadCount(statsUrl, downloadCount);
+			if (downloadCount > -1) {
+				IDEStatsUtil.putCachedDownloadCount(statsUrl, downloadCount);
+			}
 		}
 	}
 	
@@ -36,12 +41,16 @@ public class IDEStatsJobListener implements MessageListener {
 			
 			String count = footer.getTextContent().trim();
 			
+			_log.info("Parsed new downloadCount of " + count + "for :" + statsUrl);
+			
 			return Integer.parseInt(count);
 		} catch (Exception e) {
-			e.printStackTrace();
+			_log.debug("Failed to parse: " + statsUrl, e);
 			
 			return -1;
 		}
 	} 
+	
+	 Log _log = LogFactoryUtil.getLog(IDEStatsJobListener.class);
 
 }

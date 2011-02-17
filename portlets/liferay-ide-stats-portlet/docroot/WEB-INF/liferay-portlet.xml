@@ -12,7 +12,7 @@
 			<trigger>
 				<simple>
 					<simple-trigger-value>1</simple-trigger-value>
-					<time-unit>min</time-unit>
+					<time-unit>hour</time-unit>
 				</simple>
 			</trigger>
 		</scheduler-entry>
