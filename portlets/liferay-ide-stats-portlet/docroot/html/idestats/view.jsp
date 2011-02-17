@@ -18,4 +18,4 @@
 
 <portlet:defineObjects />
 
-This is the <b>Liferay IDE Stats</b> portlet in View mode.
+
