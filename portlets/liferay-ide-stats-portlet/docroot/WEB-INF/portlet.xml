@@ -12,7 +12,7 @@
 		<portlet-class>com.liferay.IDEStatsPortlet</portlet-class>
 		<init-param>
 			<name>view-jsp</name>
-			<value>/html/idestats/view.jsp</value>
+			<value>/html/idestats/view.jsp</value>		
 		</init-param>
 		<expiration-cache>0</expiration-cache>
 		<supports>
@@ -20,7 +20,7 @@
 			<portlet-mode>VIEW</portlet-mode>
 		</supports>
 		<portlet-info>
-			<title>Liferay IDE Status</title>
+			<title>Liferay IDE Stats</title>
 			<short-title>IDEStatsPortlet</short-title>
 			<keywords></keywords>
 		</portlet-info>
