@@ -48,7 +48,13 @@ public class IDEStatsPortlet extends MVCPortlet {
 			return -1;
 		}
 		
-		return Integer.parseInt(downloadCount.toString());
+		if (downloadCount instanceof Integer) {
+			return (Integer)downloadCount;
+		}
+		else {
+			return Integer.parseInt(downloadCount.toString());
+		}
+		
 	}
 
 }

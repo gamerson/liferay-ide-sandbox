@@ -4,7 +4,7 @@
       <attribute name="provider-id" value="com.liferay.ide.eclipse.plugin.portlet.libraryProvider"/>
     </node>
     <node name="liferay-plugin-project">
-      <attribute name="sdk-name" value="liferay-plugins-sdk-6.0-ee-sp1"/>
+      <attribute name="sdk-name" value="liferay-ide-sandbox"/>
     </node>
   </facet>
 </root>

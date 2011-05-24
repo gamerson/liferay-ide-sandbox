@@ -4,18 +4,18 @@ import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.messaging.Message;
 import com.liferay.portal.kernel.messaging.MessageListener;
-import com.liferay.portal.kernel.messaging.MessageListenerException;
 
 import org.cyberneko.html.parsers.DOMParser;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 public class IDEStatsJobListener implements MessageListener {
 
 	
 	@Override
-	public void receive(Message arg0) throws MessageListenerException {
+	public void receive(Message arg0)  {
 		String[] statsUrls = IDEStatsUtil.getStatsUrls();
 		
 		for (String statsUrl : statsUrls) {
@@ -35,15 +35,37 @@ public class IDEStatsJobListener implements MessageListener {
 			
 			Document doc = domParser.getDocument();
 			
-			Element statsTable = doc.getElementById("stats-table");
+			Element statsTable = doc.getElementById("files_list");
 			
-			Node footer = statsTable.getElementsByTagName("tfoot").item(0);
+			Element tbody = (Element) statsTable.getElementsByTagName("tbody").item(0);
 			
-			String count = footer.getTextContent().trim();
+			NodeList imgs = tbody.getElementsByTagName("img");
 			
-			_log.info("Parsed new downloadCount of " + count + "for :" + statsUrl);
+			int downloadCount = 0;
 			
-			return Integer.parseInt(count);
+			for (int i = 0; i < imgs.getLength(); i++) {
+				try {
+					Element img = (Element) imgs.item(i);
+					
+					if (img.getAttribute("class").contains("file")) {
+						String title = img.getAttribute("title");
+						
+						title = title.replaceAll(",", "");
+						
+						String count = title.substring(0, title.indexOf(' '));
+						
+						_log.info("Parsed new downloadCount of " + count + "for :" + statsUrl);
+						
+						downloadCount += Integer.parseInt(count);
+					}
+				
+				}
+				catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+			
+			return downloadCount;
 		} catch (Exception e) {
 			_log.debug("Failed to parse: " + statsUrl, e);
 			
