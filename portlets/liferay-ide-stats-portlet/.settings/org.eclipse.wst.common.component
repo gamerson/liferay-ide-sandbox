@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="liferay-ide-stats-portlet">
-        <wb-resource deploy-path="/" source-path="/docroot"/>
-        <property name="context-root" value="liferay-ide-stats-portlet"/>
-        <property name="java-output-path" value="/liferay-ide-stats-portlet/docroot/WEB-INF/classes"/>
-    </wb-module>
-</project-modules>
