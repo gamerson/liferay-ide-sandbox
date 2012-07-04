@@ -7,7 +7,6 @@ import org.apache.commons.httpclient.methods.GetMethod;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-@SuppressWarnings("serial")
 public class IDEStatsMainApplication  {
 
 	private final String prefix = "http://sourceforge.net/projects/lportal/files/Liferay%20IDE/";
@@ -81,19 +80,64 @@ public class IDEStatsMainApplication  {
     		"1.4.0/eclipse_Liferay_IDE_1.4.0_v201110020220-win32.zip",
     		"1.4.0/eclipse_Liferay_IDE_1.4.0_v201110020220-win32-x86_64.zip",
     		"1.4.0/updatesite/features/com.liferay.ide.eclipse.tools_1.4.0.v201110020918.jar",
+    		
+    		"1.5.0/liferay-ide-eclipse-updatesite-1.5.0.zip",
+    		"1.5.0/eclipse_Liferay_IDE_1.5.0_v201201102224-macosx.tar.gz",
+    		"1.5.0/eclipse_Liferay_IDE_1.5.0_v201201102224-macosx-x86_64.tar.gz",
+    		"1.5.0/eclipse_Liferay_IDE_1.5.0_v201201102224-linux.tar.gz",
+    		"1.5.0/eclipse_Liferay_IDE_1.5.0_v201201102224-linux-x86_64.tar.gz",
+    		"1.5.0/eclipse_Liferay_IDE_1.5.0_v201201102224-win32.zip",
+    		"1.5.0/eclipse_Liferay_IDE_1.5.0_v201201102224-win32-x86_64.zip",
+    		"1.5.0/updatesite/features/com.liferay.ide.eclipse.tools_1.5.0.v201201110622.jar",
+    		
+    		"1.5.1/liferay-ide-eclipse-updatesite-1.5.1.zip",
+    		"1.5.1/eclipse_Liferay_IDE_1.5.1_v201202280246-macosx.tar.gz",
+    		"1.5.1/eclipse_Liferay_IDE_1.5.1_v201202280246-macosx-x86_64.tar.gz",
+    		"1.5.1/eclipse_Liferay_IDE_1.5.1_v201202280246-linux.tar.gz",
+    		"1.5.1/eclipse_Liferay_IDE_1.5.1_v201202280246-linux-x86_64.tar.gz",
+    		"1.5.1/eclipse_Liferay_IDE_1.5.1_v201202280246-win32.zip",
+    		"1.5.1/eclipse_Liferay_IDE_1.5.1_v201202280246-win32-x86_64.zip",
+    		"1.5.1/updatesite/features/com.liferay.ide.eclipse.tools_1.5.1.v201202281044.jar",
+    		
+    		"1.5.2/liferay-ide-eclipse-updatesite-1.5.2.zip",
+    		"1.5.2/eclipse_Liferay_IDE_1.5.2_v201203040240-macosx.tar.gz",
+    		"1.5.2/eclipse_Liferay_IDE_1.5.2_v201203040240-macosx-x86_64.tar.gz",
+    		"1.5.2/eclipse_Liferay_IDE_1.5.2_v201203040240-linux.tar.gz",
+    		"1.5.2/eclipse_Liferay_IDE_1.5.2_v201203040240-linux-x86_64.tar.gz",
+    		"1.5.2/eclipse_Liferay_IDE_1.5.2_v201203040240-win32.zip",
+    		"1.5.2/eclipse_Liferay_IDE_1.5.2_v201203040240-win32-x86_64.zip",
+    		"1.5.2/updatesite/features/com.liferay.ide.eclipse.tools_1.5.2.v201203041037.jar",
+    		
+    		"1.5.3/liferay-ide-eclipse-updatesite-1.5.3.zip",
+    		"1.5.3/eclipse_Liferay_IDE_1.5.3.v201205280937-macosx.tar.gz",
+    		"1.5.3/eclipse_Liferay_IDE_1.5.3.v201205280937-macosx.tar.gz",
+    		"1.5.3/eclipse_Liferay_IDE_1.5.3.v201205280937-macosx-x86_64.tar.gz",
+    		"1.5.3/eclipse_Liferay_IDE_1.5.3.v201205280937-linux.tar.gz",
+    		"1.5.3/eclipse_Liferay_IDE_1.5.3.v201205280937-linux-x86_64.tar.gz",
+    		"1.5.3/eclipse_Liferay_IDE_1.5.3.v201205280937-win32.zip",
+    		"1.5.3/eclipse_Liferay_IDE_1.5.3.v201205280937-win32-x86_64.zip",
+    		"1.5.3/updatesite/features/com.liferay.ide.eclipse.tools_1.5.3.v201205280937.jar",
+    		
     };
     
-    private final String aprildaterange = "?start_date=2011-04-01&end_date=2011-04-30";
-    private final String maydaterange = "?start_date=2011-05-01&end_date=2011-05-31";
-    private final String junedaterange = "?start_date=2011-06-01&end_date=2011-06-30";
-    private final String julydaterange = "?start_date=2011-07-01&end_date=2011-07-31";
-    private final String augustdaterange = "?start_date=2011-08-01&end_date=2011-08-31";
+//    private final String aprildaterange = "?start_date=2011-04-01&end_date=2011-04-30";
+//    private final String maydaterange = "?start_date=2011-05-01&end_date=2011-05-31";
+//    private final String junedaterange = "?start_date=2011-06-01&end_date=2011-06-30";
+//    private final String julydaterange = "?start_date=2011-07-01&end_date=2011-07-31";
+//    private final String augustdaterange = "?start_date=2011-08-01&end_date=2011-08-31";
+//    
+//    private final String septdaterange = "?start_date=2011-09-01&end_date=2011-09-30";
+//    private final String octdaterange = "?start_date=2011-10-01&end_date=2011-10-31";
+//    private final String novdaterange = "?start_date=2011-11-01&end_date=2011-11-30";
+//    private final String decdaterange = "?start_date=2011-12-01&end_date=2011-12-31";
+//    private final String jandaterange = "?start_date=2012-01-01&end_date=2012-01-31";
+//    private final String febdaterange = "?start_date=2012-02-01&end_date=2012-02-29";
+//    private final String mardaterange = "?start_date=2012-03-01&end_date=2012-03-31";
+//    private final String aprildaterange2012 = "?start_date=2012-04-01&end_date=2012-04-30";
+    private final String maydaterange2012 = "?start_date=2012-05-01&end_date=2012-05-31";
+    private final String junedaterange2012 = "?start_date=2012-06-01&end_date=2012-06-30";
     
-    private final String septdaterange = "?start_date=2011-09-01&end_date=2011-09-30";
-    private final String octdaterange = "?start_date=2011-10-01&end_date=2011-10-31";
-    private final String novdaterange = "?start_date=2011-11-01&end_date=2011-11-30";
-    
-    private final String fullrange = "?start_date=2010-02-01&end_date=2011-11-30";
+    private final String fullrange = "?start_date=2010-02-01&end_date=2015-01-01";
     
     public IDEStatsMainApplication() {
     }
@@ -107,25 +151,39 @@ public class IDEStatsMainApplication  {
     public String getstats() {
     	
     	
-    	int april = count(aprildaterange);
-    	int may = count(maydaterange);
-    	int june = count(junedaterange);
-    	int july = count(julydaterange);
-    	int august = count(augustdaterange);
-    	int sept = count(septdaterange);
-    	int oct = count(octdaterange);
-    	int nov = count(novdaterange);
+//    	int april = count(aprildaterange);
+//    	int may = count(maydaterange);
+//    	int june = count(junedaterange);
+//    	int july = count(julydaterange);
+//    	int august = count(augustdaterange);
+//    	int sept = count(septdaterange);
+//    	int oct = count(octdaterange);
+//    	int nov = count(novdaterange);
+//    	int dec = count(decdaterange);
+//    	int jan = count(jandaterange);
+//    	int feb = count(febdaterange);
+//    	int mar = count(mardaterange);
+//    	int april2012 = count(aprildaterange2012);
+    	int may2012 = count(maydaterange2012);
+    	int june2012 = count(junedaterange2012);
     	int full = count(fullrange);
     	
     	return 
-			"april = " + april + "\n" +
-	    	"may = " + may + "\n" +
-	    	"june = " + june + "\n" +
-	    	"july = " + july + "\n" +
-	    	"august = " + august + "\n" +
-	    	"september = " + sept + "\n" +
-	    	"october = " + oct + "\n" +
-	    	"november = " + nov + "\n" +
+//			"april = " + april + "\n" +
+//	    	"may = " + may + "\n" +
+//	    	"june = " + june + "\n" +
+//	    	"july = " + july + "\n" +
+//	    	"august = " + august + "\n" +
+//	    	"september = " + sept + "\n" +
+//	    	"october = " + oct + "\n" +
+//	    	"november = " + nov + "\n" +
+//	    	"december = " + dec + "\n" +
+//	    	"janurary = " + jan + "\n" +
+//	    	"february = " + feb + "\n" +
+//	    	"march = " + mar + "\n" +
+//	    	"april 2012 = " + april2012 + "\n" +
+	    	"may 2012 = " + may2012 + "\n" +
+	    	"june 2012 = " + june2012 + "\n" +
 	    	"full = " + full;
     	
     }
@@ -138,6 +196,7 @@ public class IDEStatsMainApplication  {
         	
         	GetMethod get = new GetMethod(prefix + fileurl + suffix + daterange);
     		try {
+    			System.out.println(get.getURI());
 				int result = client.executeMethod(get);
 				if (result != HttpStatus.SC_OK) {
 					retval = -1;
