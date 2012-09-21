@@ -8,7 +8,7 @@
 			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/com.liferay.studio.eclipse.server.ee.tomcat.runtimeClasspathProvider/Liferay v6.1 EE (Tomcat 7)">
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/com.liferay.ide.eclipse.server.tomcat.runtimeClasspathProvider/6.2.x">
 		<attributes>
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>

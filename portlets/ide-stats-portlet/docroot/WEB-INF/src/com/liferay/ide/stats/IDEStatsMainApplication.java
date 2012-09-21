@@ -1,10 +1,8 @@
 package com.liferay.ide.stats;
 
 import org.apache.commons.httpclient.HttpClient;
-import org.apache.commons.httpclient.HttpException;
 import org.apache.commons.httpclient.HttpStatus;
 import org.apache.commons.httpclient.methods.GetMethod;
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class IDEStatsMainApplication {
@@ -148,6 +146,9 @@ public class IDEStatsMainApplication {
 	private final String apr2012 = "?start_date=2012-04-01&end_date=2012-04-30";
 	private final String may2012 = "?start_date=2012-05-01&end_date=2012-05-31";
 	private final String jun2012 = "?start_date=2012-06-01&end_date=2012-06-30";
+	private final String jul2012 = "?start_date=2012-07-01&end_date=2012-07-31";
+	private final String aug2012 = "?start_date=2012-08-01&end_date=2012-08-31";
+	private final String sep2012 = "?start_date=2012-09-01&end_date=2012-09-30";
 
 	private final String fullrange = "?start_date=2010-02-01&end_date=2015-01-01";
 
@@ -161,49 +162,55 @@ public class IDEStatsMainApplication {
 	}
 
 	public String getstats() {
-		int dec2010count = count(dec2010);
-		int jan2011count = count(jan2011);
-		int feb2011count = count(feb2011);
-		int mar2011count = count(mar2011);
-		int apr2011count = count(apr2011);
-		int may2011count = count(may2011);
-		int jun2011count = count(jun2011);
-		int jul2011count = count(jul2011);
-		int aug2011count = count(aug2011);
-		int sep2011count = count(sep2011);
-		int oct2011count = count(oct2011);
-		int nov2011count = count(nov2011);
-		int dec2011count = count(dec2011);
-		int jan2012count = count(jan2012);
-		int feb2012count = count(feb2012);
-		int mar2012count = count(mar2012);
-		int apr2012count = count(apr2012);
-		int may2012count = count(may2012);
-		int jun2012count = count(jun2012);
+//		int dec2010count = count(dec2010);
+//		int jan2011count = count(jan2011);
+//		int feb2011count = count(feb2011);
+//		int mar2011count = count(mar2011);
+//		int apr2011count = count(apr2011);
+//		int may2011count = count(may2011);
+//		int jun2011count = count(jun2011);
+//		int jul2011count = count(jul2011);
+//		int aug2011count = count(aug2011);
+//		int sep2011count = count(sep2011);
+//		int oct2011count = count(oct2011);
+//		int nov2011count = count(nov2011);
+//		int dec2011count = count(dec2011);
+//		int jan2012count = count(jan2012);
+//		int feb2012count = count(feb2012);
+//		int mar2012count = count(mar2012);
+//		int apr2012count = count(apr2012);
+//		int may2012count = count(may2012);
+//		int jun2012count = count(jun2012);
+		int jul2012count = count(jul2012);
+		int aug2012count = count(aug2012);
+		int sep2012count = count(sep2012);
 		int full = count(fullrange);
 
 		return
-		"dec 2010 = " + dec2010count + "\n" + 
+//		"dec 2010 = " + dec2010count + "\n" + 
+				
+//		"jan 2011 = " + jan2011count + "\n" + 
+//		"feb 2011 = " + feb2011count + "\n" + 
+//		"mar 2011 = " + mar2011count + "\n" + 
+//		"april 2011 = " + apr2011count + "\n" + 
+//		"may 2011 = " + may2011count + "\n" + 
+//		"june 2011 = " + jun2011count + "\n" + 
+//		"july 2011 = " + jul2011count + "\n" + 
+//		"aug 2011 = " + aug2011count + "\n" + 
+//		"sept 2011 = " + sep2011count + "\n" + 
+//		"oct 2011 = " + oct2011count + "\n" + 
+//		"nov 2011 = " + nov2011count + "\n" + 
+//		"dec 2011 = " + dec2011count + "\n" + 
 		
-		"jan 2011 = " + jan2011count + "\n" + 
-		"feb 2011 = " + feb2011count + "\n" + 
-		"mar 2011 = " + mar2011count + "\n" + 
-		"april 2011 = " + apr2011count + "\n" + 
-		"may 2011 = " + may2011count + "\n" + 
-		"june 2011 = " + jun2011count + "\n" + 
-		"july 2011 = " + jul2011count + "\n" + 
-		"aug 2011 = " + aug2011count + "\n" + 
-		"sept 2011 = " + sep2011count + "\n" + 
-		"oct 2011 = " + oct2011count + "\n" + 
-		"nov 2011 = " + nov2011count + "\n" + 
-		"dec 2011 = " + dec2011count + "\n" + 
-		
-		"jan 2012 = " + jan2012count + "\n" + 
-		"feb 2012 = " + feb2012count + "\n" + 
-		"mar 2012 = " + mar2012count + "\n" + 
-		"april 2012 = " + apr2012count + "\n" + 
-		"may 2012 = " + may2012count + "\n" + 
-		"june 2012 = " + jun2012count + "\n" + 
+//		"jan 2012 = " + jan2012count + "\n" + 
+//		"feb 2012 = " + feb2012count + "\n" + 
+//		"mar 2012 = " + mar2012count + "\n" + 
+//		"april 2012 = " + apr2012count + "\n" + 
+//		"may 2012 = " + may2012count + "\n" + 
+//		"june 2012 = " + jun2012count + "\n" + 
+		"july 2012 = " + jul2012count + "\n" + 
+		"aug 2012 = " + aug2012count + "\n" + 
+		"sep 2012 = " + sep2012count + "\n" + 
 		
 		"all time = " + full;
 	}
