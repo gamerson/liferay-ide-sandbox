@@ -1,0 +1,1 @@
+Sandbox repository for Liferay IDE development.
