@@ -153,11 +153,19 @@ public class Main
         "1.6.1/eclipse_Liferay_IDE_1.6.1.v201211020947-win32.zip",
         "1.6.1/eclipse_Liferay_IDE_1.6.1.v201211020947-win32-x86_64.zip",
         "1.6.1/updatesite/plugins/com.liferay.ide.eclipse.core_1.6.1.v201211020947.jar",
+
+        "1.6.2/liferay-ide-eclipse-updatesite-1.6.2.zip",
+        "1.6.2/eclipse_Liferay_IDE_1.6.2.v201303111029-macosx.tar.gz",
+        "1.6.2/eclipse_Liferay_IDE_1.6.2.v201303111029-macosx-x86_64.tar.gz",
+        "1.6.2/eclipse_Liferay_IDE_1.6.2.v201303111029-linux.tar.gz",
+        "1.6.2/eclipse_Liferay_IDE_1.6.2.v201303111029-linux-x86_64.tar.gz",
+        "1.6.2/eclipse_Liferay_IDE_1.6.2.v201303111029-win32.zip",
+        "1.6.2/eclipse_Liferay_IDE_1.6.2.v201303111029-win32-x86_64.zip",
+        "1.6.2/updatesite/plugins/com.liferay.ide.eclipse.core_1.6.2.v201303111029.jar",
     };
 
-    private final String dec2012 = "?start_date=2012-12-01&end_date=2012-12-31";
-    private final String jan2013 = "?start_date=2013-01-01&end_date=2013-01-31";
-    private final String feb2013 = "?start_date=2013-02-01&end_date=2013-02-28";
+    private final String mar2013 = "?start_date=2013-03-01&end_date=2013-03-31";
+    private final String apr2013 = "?start_date=2013-04-01&end_date=2013-04-30";
 
     private final String fullrange = "?start_date=2010-02-01&end_date=2015-01-01";
 
@@ -171,15 +179,13 @@ public class Main
 
     public String getstats()
     {
-        int dec2012count = count( dec2012 );
-        int jan2013count = count( jan2013 );
-        int feb2013count = count( feb2013 );
+        int mar2013count = count( mar2013 );
+        int apr2013count = count( apr2013 );
 
         int full = count( fullrange );
 
-        return "dec 2012 = " + dec2012count + "\n" +
-               "jan 2013 = " + jan2013count + "\n" +
-               "feb 2013 = " + feb2013count + "\n" +
+        return "mar 2013 = " + mar2013count + "\n" +
+               "apr 2013 = " + apr2013count + "\n" +
                "all time = " + full;
     }
 
