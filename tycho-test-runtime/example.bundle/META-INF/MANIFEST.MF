@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Example Bundle
+Bundle-SymbolicName: example.bundle;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: example.bundle.ExampleCore
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.core.resources
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: example.bundle
+Bundle-ClassPath: .
