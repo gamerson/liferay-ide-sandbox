@@ -164,8 +164,8 @@ public class Main
         "1.6.2/updatesite/plugins/com.liferay.ide.eclipse.core_1.6.2.v201303111029.jar",
     };
 
-    private final String mar2013 = "?start_date=2013-03-01&end_date=2013-03-31";
-    private final String apr2013 = "?start_date=2013-04-01&end_date=2013-04-30";
+    private final String may2013 = "?start_date=2013-05-01&end_date=2013-05-31";
+    private final String jun2013 = "?start_date=2013-06-01&end_date=2013-06-30";
 
     private final String fullrange = "?start_date=2010-02-01&end_date=2015-01-01";
 
@@ -179,13 +179,13 @@ public class Main
 
     public String getstats()
     {
-        int mar2013count = count( mar2013 );
-        int apr2013count = count( apr2013 );
+//        int may2013count = count( may2013 );
+//        int jun2013count = count( jun2013 );
 
         int full = count( fullrange );
 
-        return "mar 2013 = " + mar2013count + "\n" +
-               "apr 2013 = " + apr2013count + "\n" +
+        return /*"may 2013 = " + may2013count + "\n" +
+               "jun 2013 = " + jun2013count + "\n" +*/
                "all time = " + full;
     }
 
