@@ -24,7 +24,7 @@
             </plugin>
             <plugin>
                 <groupId>org.eclipse.tycho</groupId>
-                <artifactId>tycho-surefire-plugin</artifactId>
+                <artifactId>target-platform-configuration</artifactId>
                 <configuration>
                     <dependency-resolution>
                         <extraRequirements>
