@@ -162,10 +162,65 @@ public class Main
         "1.6.2/eclipse_Liferay_IDE_1.6.2.v201303111029-win32.zip",
         "1.6.2/eclipse_Liferay_IDE_1.6.2.v201303111029-win32-x86_64.zip",
         "1.6.2/updatesite/plugins/com.liferay.ide.eclipse.core_1.6.2.v201303111029.jar",
+
+        "2.0.0%20M1/liferay-ide-updatesite-2.0.0-m1-201308200800.zip",
+        "2.0.0%20M1/liferay-ide-eclipse-windows-x64-2.0.0-m1-201308200800.zip",
+        "2.0.0%20M1/liferay-ide-eclipse-windows-x32-2.0.0-m1-201308200800.zip",
+        "2.0.0%20M1/liferay-ide-eclipse-macosx-x64-2.0.0-m1-201308200800.tar.gz",
+        "2.0.0%20M1/liferay-ide-eclipse-macosx-x32-2.0.0-m1-201308200800.tar.gz",
+        "2.0.0%20M1/liferay-ide-eclipse-linux-x64-2.0.0-m1-201308200800.tar.gz",
+        "2.0.0%20M1/liferay-ide-eclipse-linux-x32-2.0.0-m1-201308200800.tar.gz",
+        "2.0.0%20M1/updatesite/tools/plugins/com.liferay.ide.core_2.0.0.20130820-0800-M1.jar",
+
+        "2.0.0%20M2/liferay-ide-updatesite-2.0.0-m2-201311051611.zip",
+        "2.0.0%20M2/liferay-ide-eclipse-windows-x64-2.0.0-m2-201311051611.zip",
+        "2.0.0%20M2/liferay-ide-eclipse-windows-x32-2.0.0-m2-201311051611.zip",
+        "2.0.0%20M2/liferay-ide-eclipse-macosx-x64-2.0.0-m2-201311051611.tar.gz",
+        "2.0.0%20M2/liferay-ide-eclipse-macosx-x32-2.0.0-m2-201311051611.tar.gz",
+        "2.0.0%20M2/liferay-ide-eclipse-linux-x64-2.0.0-m2-201311051611.tar.gz",
+        "2.0.0%20M2/liferay-ide-eclipse-linux-x32-2.0.0-m2-201311051611.tar.gz",
+        "2.0.0%20M2/updatesite/tools/plugins/com.liferay.ide.core_2.0.0.201311051611-m2.jar",
+
+        "2.0.0%20M3/liferay-ide-updatesite-2.0.0-m3-201311271605.zip",
+        "2.0.0%20M3/liferay-ide-eclipse-windows-x64-2.0.0-m3-201311271605.zip",
+        "2.0.0%20M3/liferay-ide-eclipse-windows-x32-2.0.0-m3-201311271605.zip",
+        "2.0.0%20M3/liferay-ide-eclipse-macosx-x64-2.0.0-m3-201311271605.tar.gz",
+        "2.0.0%20M3/liferay-ide-eclipse-macosx-x32-2.0.0-m3-201311271605.tar.gz",
+        "2.0.0%20M3/liferay-ide-eclipse-linux-x64-2.0.0-m3-201311271605.tar.gz",
+        "2.0.0%20M3/liferay-ide-eclipse-linux-x32-2.0.0-m3-201311271605.tar.gz",
+        "2.0.0%20M3/updatesite/tools/plugins/com.liferay.ide.core_2.0.0.201311271605-m3.jar",
+
+        "2.0.0%20GA1/liferay-ide-updatesite-2.0.0-ga1-201312200205.zip",
+        "2.0.0%20GA1/liferay-ide-eclipse-windows-x64-2.0.0-ga1-201312200205.zip",
+        "2.0.0%20GA1/liferay-ide-eclipse-windows-x32-2.0.0-ga1-201312200205.zip",
+        "2.0.0%20GA1/liferay-ide-eclipse-macosx-x64-2.0.0-ga1-201312200205.tar.gz",
+        "2.0.0%20GA1/liferay-ide-eclipse-macosx-x32-2.0.0-ga1-201312200205.tar.gz",
+        "2.0.0%20GA1/liferay-ide-eclipse-linux-x64-2.0.0-ga1-201312200205.tar.gz",
+        "2.0.0%20GA1/liferay-ide-eclipse-linux-x32-2.0.0-ga1-201312200205.tar.gz",
+        "2.0.0%20GA1/updatesite/tools/plugins/com.liferay.ide.core_2.0.0.201312200205-ga1.jar",
+
+        "2.0.1%20GA2/liferay-ide-updatesite-2.0.1-ga2-201401270944.zip",
+        "2.0.1%20GA2/liferay-ide-eclipse-windows-x64-2.0.1-ga2-201401270944.zip",
+        "2.0.1%20GA2/liferay-ide-eclipse-windows-x32-2.0.1-ga2-201401270944.zip",
+        "2.0.1%20GA2/liferay-ide-eclipse-macosx-x64-2.0.1-ga2-201401270944.tar.gz",
+        "2.0.1%20GA2/liferay-ide-eclipse-macosx-x32-2.0.1-ga2-201401270944.tar.gz",
+        "2.0.1%20GA2/liferay-ide-eclipse-linux-x64-2.0.1-ga2-201401270944.tar.gz",
+        "2.0.1%20GA2/liferay-ide-eclipse-linux-x32-2.0.1-ga2-201401270944.tar.gz",
+        "2.0.1%20GA2/updatesite/tools/plugins/com.liferay.ide.core_2.0.1.201401270944-ga2.jar",
+
+        "2.1.0%20GA1/liferay-ide-updatesite-2.1.0-ga1-201403281241.zip",
+        "2.1.0%20GA1/liferay-ide-eclipse-windows-x64-2.1.0-ga1-201403281241.zip",
+        "2.1.0%20GA1/liferay-ide-eclipse-windows-x32-2.1.0-ga1-201403281241.zip",
+        "2.1.0%20GA1/liferay-ide-eclipse-macosx-x64-2.1.0-ga1-201403281241.tar.gz",
+        "2.1.0%20GA1/liferay-ide-eclipse-macosx-x32-2.1.0-ga1-201403281241.tar.gz",
+        "2.1.0%20GA1/liferay-ide-eclipse-linux-x64-2.1.0-ga1-201403281241.tar.gz",
+        "2.1.0%20GA1/liferay-ide-eclipse-linux-x32-2.1.0-ga1-201403281241.tar.gz",
+        "2.1.0%20GA1/updatesite/tools/plugins/com.liferay.ide.core_2.1.0.201403281241-ga1.jar",
     };
 
-    private final String may2013 = "?start_date=2013-05-01&end_date=2013-05-31";
-    private final String jun2013 = "?start_date=2013-06-01&end_date=2013-06-30";
+//    private final String mar2014 = "?start_date=2014-03-01&end_date=2014-03-31";
+//    private final String apr2014 = "?start_date=2014-04-01&end_date=2014-04-30";
+//    private final String may2014 = "?start_date=2014-05-01&end_date=2014-05-31";
 
     private final String fullrange = "?start_date=2010-02-01&end_date=2015-01-01";
 
@@ -179,13 +234,16 @@ public class Main
 
     public String getstats()
     {
-//        int may2013count = count( may2013 );
-//        int jun2013count = count( jun2013 );
+//        int mar2014count = count( mar2014 );
+//        int apr2014count = count( apr2014 );
+//        int may2014count = count( may2014 );
 
         int full = count( fullrange );
 
-        return /*"may 2013 = " + may2013count + "\n" +
-               "jun 2013 = " + jun2013count + "\n" +*/
+        return
+//               "mar 2014 = " + mar2014count + "\n" +
+//               "apr 2014 = " + apr2014count + "\n" +
+//               "may 2014 = " + may2014count + "\n" +
                "all time = " + full;
     }
 
