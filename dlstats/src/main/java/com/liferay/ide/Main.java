@@ -198,6 +198,7 @@ public class Main
         "2.0.0%20GA1/liferay-ide-eclipse-linux-x64-2.0.0-ga1-201312200205.tar.gz",
         "2.0.0%20GA1/liferay-ide-eclipse-linux-x32-2.0.0-ga1-201312200205.tar.gz",
         "2.0.0%20GA1/updatesite/tools/plugins/com.liferay.ide.core_2.0.0.201312200205-ga1.jar",
+        "2.0.0%20GA1/updatesite/maven/plugins/com.liferay.ide.maven.core_2.0.0.201312200205-ga1.jar",
 
         "2.0.1%20GA2/liferay-ide-updatesite-2.0.1-ga2-201401270944.zip",
         "2.0.1%20GA2/liferay-ide-eclipse-windows-x64-2.0.1-ga2-201401270944.zip",
@@ -207,6 +208,7 @@ public class Main
         "2.0.1%20GA2/liferay-ide-eclipse-linux-x64-2.0.1-ga2-201401270944.tar.gz",
         "2.0.1%20GA2/liferay-ide-eclipse-linux-x32-2.0.1-ga2-201401270944.tar.gz",
         "2.0.1%20GA2/updatesite/tools/plugins/com.liferay.ide.core_2.0.1.201401270944-ga2.jar",
+        "2.0.1%20GA2/updatesite/maven/plugins/com.liferay.ide.maven.core_2.0.1.201401270944-ga2.jar",
 
         "2.1.0%20GA1/liferay-ide-updatesite-2.1.0-ga1-201403281241.zip",
         "2.1.0%20GA1/liferay-ide-eclipse-windows-x64-2.1.0-ga1-201403281241.zip",
@@ -216,11 +218,45 @@ public class Main
         "2.1.0%20GA1/liferay-ide-eclipse-linux-x64-2.1.0-ga1-201403281241.tar.gz",
         "2.1.0%20GA1/liferay-ide-eclipse-linux-x32-2.1.0-ga1-201403281241.tar.gz",
         "2.1.0%20GA1/updatesite/tools/plugins/com.liferay.ide.core_2.1.0.201403281241-ga1.jar",
+        "2.1.0%20GA1/updatesite/maven/plugins/com.liferay.ide.maven.core_2.1.0.201403281241-ga1.jar",
+
+        "2.1.1%20GA2/liferay-ide-updatesite-2.1.1-ga2-201406300312.zip",
+        "2.1.1%20GA2/liferay-ide-eclipse-windows-x64-2.1.1-ga2-201406300312.zip",
+        "2.1.1%20GA2/liferay-ide-eclipse-windows-x32-2.1.1-ga2-201406300312.zip",
+        "2.1.1%20GA2/liferay-ide-eclipse-macosx-x64-2.1.1-ga2-201406300312.tar.gz",
+        "2.1.1%20GA2/liferay-ide-eclipse-linux-x64-2.1.1-ga2-201406300312.tar.gz",
+        "2.1.1%20GA2/liferay-ide-eclipse-linux-x32-2.1.1-ga2-201406300312.tar.gz",
+        "2.1.1%20GA2/updatesite/tools/plugins/com.liferay.ide.core_2.1.1.201406300312-ga2.jar",
+        "2.1.1%20GA2/updatesite/maven/plugins/com.liferay.ide.maven.core_2.1.1.201406300312-ga2.jar",
+
+        "2.2.0%20GA1/liferay-ide-updatesite-2.2.0-ga1-201410291007.zip",
+        "2.2.0%20GA1/liferay-ide-eclipse-windows-x64-2.2.0-ga1-201410291007.zip",
+        "2.2.0%20GA1/liferay-ide-eclipse-windows-x32-2.2.0-ga1-201410291007.zip",
+        "2.2.0%20GA1/liferay-ide-eclipse-macosx-x64-2.2.0-ga1-201410291007.tar.gz",
+        "2.2.0%20GA1/liferay-ide-eclipse-linux-x64-2.2.0-ga1-201410291007.tar.gz",
+        "2.2.0%20GA1/liferay-ide-eclipse-linux-x32-2.2.0-ga1-201410291007.tar.gz",
+        "2.2.0%20GA1/updatesite/tools/plugins/com.liferay.ide.core_2.2.0.201410291007-ga1.jar",
+        "2.2.0%20GA1/updatesite/tools/plugins/com.liferay.ide.alloy.core_2.2.0.201410291007-ga1.jar",
+        "2.2.0%20GA1/updatesite/maven/plugins/com.liferay.ide.maven.core_2.2.0.201410291007-ga1.jar",
+
+        "2.2.1%20GA2/liferay-ide-updatesite-2.2.1-ga2-201411200728.zip",
+        "2.2.1%20GA2/liferay-ide-eclipse-windows-x64-2.2.1-ga2-201411200728.zip",
+        "2.2.1%20GA2/liferay-ide-eclipse-windows-x32-2.2.1-ga2-201411200728.zip",
+        "2.2.1%20GA2/liferay-ide-eclipse-macosx-x64-2.2.1-ga2-201411200728.tar.gz",
+        "2.2.1%20GA2/liferay-ide-eclipse-linux-x64-2.2.1-ga2-201411200728.tar.gz",
+        "2.2.1%20GA2/liferay-ide-eclipse-linux-x32-2.2.1-ga2-201411200728.tar.gz",
+        "2.2.1%20GA2/updatesite/tools/plugins/com.liferay.ide.core_2.2.1.201411200728-ga2.jar",
+        "2.2.1%20GA2/updatesite/tools/plugins/com.liferay.ide.alloy.core_2.2.1.201411200728-ga2.jar",
+        "2.2.1%20GA2/updatesite/maven/plugins/com.liferay.ide.maven.core_2.2.1.201411200728-ga2.jar",
+
     };
 
-//    private final String mar2014 = "?start_date=2014-03-01&end_date=2014-03-31";
-//    private final String apr2014 = "?start_date=2014-04-01&end_date=2014-04-30";
-//    private final String may2014 = "?start_date=2014-05-01&end_date=2014-05-31";
+    private final String jun2014 = "?start_date=2014-06-01&end_date=2014-06-30";
+    private final String jul2014 = "?start_date=2014-07-01&end_date=2014-07-31";
+    private final String aug2014 = "?start_date=2014-08-01&end_date=2014-08-31";
+    private final String sep2014 = "?start_date=2014-09-01&end_date=2014-09-30";
+    private final String oct2014 = "?start_date=2014-10-01&end_date=2014-10-31";
+    private final String nov2014 = "?start_date=2014-11-01&end_date=2014-11-30";
 
     private final String fullrange = "?start_date=2010-02-01&end_date=2015-01-01";
 
@@ -234,16 +270,22 @@ public class Main
 
     public String getstats()
     {
-//        int mar2014count = count( mar2014 );
-//        int apr2014count = count( apr2014 );
-//        int may2014count = count( may2014 );
+        int jun2014count = count( jun2014 );
+        int jul2014count = count( jul2014 );
+        int aug2014count = count( aug2014 );
+        int sep2014count = count( sep2014 );
+        int oct2014count = count( oct2014 );
+        int nov2014count = count( nov2014 );
 
         int full = count( fullrange );
 
         return
-//               "mar 2014 = " + mar2014count + "\n" +
-//               "apr 2014 = " + apr2014count + "\n" +
-//               "may 2014 = " + may2014count + "\n" +
+               "jun 2014 = " + jun2014count + "\n" +
+               "jul 2014 = " + jul2014count + "\n" +
+               "aug 2014 = " + aug2014count + "\n" +
+               "sep 2014 = " + sep2014count + "\n" +
+               "oct 2014 = " + oct2014count + "\n" +
+               "nov 2014 = " + nov2014count + "\n" +
                "all time = " + full;
     }
 
@@ -259,8 +301,8 @@ public class Main
 
             try
             {
-                // System.out.println(get.getURI());
-                System.out.println( fileurl + SUFFIX + daterange );
+                System.out.println(daterange);
+                System.out.println(get.getURI());
 
                 int result = client.executeMethod( get );
 
@@ -279,11 +321,13 @@ public class Main
                     if( total < 0 )
                     {
                         retval = -1;
+                        System.out.println("API failed");
+                        System.exit(1);
                         break;
                     }
                     else
                     {
-                        System.out.println( "got total = " + total );
+                        System.out.println( "got total = " + total + "\n");
                         retval += total;
                     }
                 }
