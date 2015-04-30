@@ -248,6 +248,16 @@ public class Main
         "2.2.1%20GA2/updatesite/tools/plugins/com.liferay.ide.core_2.2.1.201411200728-ga2.jar",
         "2.2.1%20GA2/updatesite/tools/plugins/com.liferay.ide.alloy.core_2.2.1.201411200728-ga2.jar",
         "2.2.1%20GA2/updatesite/maven/plugins/com.liferay.ide.maven.core_2.2.1.201411200728-ga2.jar",
+        
+        "2.2.2%20GA3/liferay-ide-updatesite-2.2.2-ga3-201501300730.zip",
+        "2.2.2%20GA3/liferay-ide-eclipse-windows-x64-2.2.2-ga3-201501300730.zip",
+        "2.2.2%20GA3/liferay-ide-eclipse-windows-x32-2.2.2-ga3-201501300730.zip",
+        "2.2.2%20GA3/liferay-ide-eclipse-macosx-x64-2.2.2-ga3-201501300730.tar.gz",
+        "2.2.2%20GA3/liferay-ide-eclipse-linux-x64-2.2.2-ga3-201501300730.tar.gz",
+        "2.2.2%20GA3/liferay-ide-eclipse-linux-x32-2.2.2-ga3-201501300730.tar.gz",
+        "2.2.2%20GA3/updatesite/tools/plugins/com.liferay.ide.core_2.2.2.201501300730-ga3.jar",
+        "2.2.2%20GA3/updatesite/tools/plugins/com.liferay.ide.alloy.core_2.2.2.201501300730-ga3.jar",
+        "2.2.2%20GA3/updatesite/maven/plugins/com.liferay.ide.maven.core_2.2.2.201501300730-ga3.jar",
 
     };
 
@@ -258,7 +268,7 @@ public class Main
     private final String oct2014 = "?start_date=2014-10-01&end_date=2014-10-31";
     private final String nov2014 = "?start_date=2014-11-01&end_date=2014-11-30";
 
-    private final String fullrange = "?start_date=2010-02-01&end_date=2015-01-01";
+    private final String fullrange = "?start_date=2010-02-01&end_date=2015-04-30";
 
     /**
      * @param args
@@ -270,22 +280,22 @@ public class Main
 
     public String getstats()
     {
-        int jun2014count = count( jun2014 );
-        int jul2014count = count( jul2014 );
-        int aug2014count = count( aug2014 );
-        int sep2014count = count( sep2014 );
-        int oct2014count = count( oct2014 );
-        int nov2014count = count( nov2014 );
+//        int jun2014count = count( jun2014 );
+//        int jul2014count = count( jul2014 );
+//        int aug2014count = count( aug2014 );
+//        int sep2014count = count( sep2014 );
+//        int oct2014count = count( oct2014 );
+//        int nov2014count = count( nov2014 );
 
         int full = count( fullrange );
 
         return
-               "jun 2014 = " + jun2014count + "\n" +
-               "jul 2014 = " + jul2014count + "\n" +
-               "aug 2014 = " + aug2014count + "\n" +
-               "sep 2014 = " + sep2014count + "\n" +
-               "oct 2014 = " + oct2014count + "\n" +
-               "nov 2014 = " + nov2014count + "\n" +
+//               "jun 2014 = " + jun2014count + "\n" +
+//               "jul 2014 = " + jul2014count + "\n" +
+//               "aug 2014 = " + aug2014count + "\n" +
+//               "sep 2014 = " + sep2014count + "\n" +
+//               "oct 2014 = " + oct2014count + "\n" +
+//               "nov 2014 = " + nov2014count + "\n" +
                "all time = " + full;
     }
 
